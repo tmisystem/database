@@ -4,7 +4,7 @@
 
 Tabela contendo todas as filias da empresa.
 
-| campo             | tipo               | descrição                             | Obrigatório |
+| campo             | tipo               | descrição                             | obrigatório |
 |-------------------|--------------------|---------------------------------------|-------------|
 | code              | number,string      | Identificador único da filial         | sim         |
 | name              | string             | Nome                                  | sim         |
@@ -25,7 +25,7 @@ Tabela contendo todas as filias da empresa.
 
 Tabela contendo todas os locais de retirada de produtos da empresa.
 
-| campo             | tipo               | descrição                             | Obrigatório |
+| campo             | tipo               | descrição                             | obrigatório |
 |-------------------|--------------------|---------------------------------------|-------------|
 | code              | number,string      | Identificador único da filial         | sim         |
 | name              | string             | Nome                                  | sim         |
@@ -46,7 +46,7 @@ Tabela contendo todas os locais de retirada de produtos da empresa.
 
 Tabela contendo todos os fornecedores da empresa.
 
-| campo             | tipo               | descrição                                | Obrigatório |
+| campo             | tipo               | descrição                                | obrigatório |
 |-------------------|--------------------|------------------------------------------|-------------|
 | code              | number,string      | Identificador único do fornecedor        | sim         |
 | type              | string             | F (Física) ou J (Jurídica)               | sim         |
@@ -73,7 +73,7 @@ Tabela contendo todos os fornecedores da empresa.
 
 Tabela contendo todos os clientes da empresa.
 
-| campo             | tipo               | descrição                                | Obrigatório |
+| campo             | tipo               | descrição                                | obrigatório |
 |-------------------|--------------------|------------------------------------------|-------------|
 | code              | number,string      | Identificador único do cliente           | sim         |
 | type              | string             | F (Física) ou J (Jurídica)               | sim         |
@@ -101,7 +101,7 @@ Tabela contendo todos os clientes da empresa.
 
 Tabela contendo todos os produtos da empresa.
 
-| campo                 | tipo                | descrição                                            | Obrigatório |
+| campo                 | tipo                | descrição                                            | obrigatório |
 |-----------------------|---------------------|------------------------------------------------------|-------------|
 | code                  | number, string      | Identificador único do produto                       | sim         |
 | name                  | string              | Nome do produto                                      | sim         |
@@ -127,7 +127,7 @@ Tabela contendo todos os produtos da empresa.
 
 Tabela contendo todos os pedidos, seus respectivos produtos e a quantidade selecionada de cada produto.
 
-| campo                    | tipo                | descrição                                                                    | Obrigatório |
+| campo                    | tipo                | descrição                                                                    | obrigatório |
 |--------------------------|---------------------|------------------------------------------------------------------------------|-------------|
 | code                     | number, string      | Identificador único o pedido de venda                                        | sim         |
 | harvest                  | string              | Label da colheira (e.g., safra/2019, soja/2019, milho/2019)                  | sim         |
@@ -169,7 +169,7 @@ Tabela contendo a quantidade que deve ser entrege de cada produto do pedido e qu
 Caso a empresa não trabalhe com esse tipo de agendamento podemos considerar apenas a tabela de pedidos e a quantidade do produto do pedido.
 No entanto, ela irá perder a capacidade de filtrar os pedidos por data de agendamento.
 
-| campo                    | tipo                | descrição                                                                    | Obrigatório |
+| campo                    | tipo                | descrição                                                                    | obrigatório |
 |--------------------------|---------------------|------------------------------------------------------------------------------|-------------|
 | code                     | number, string      | Identificador único para a previsão de entrega                               | sim         |
 | order                    | number, string      | Identificador único o pedido de venda                                        | sim         |
