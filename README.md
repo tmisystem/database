@@ -174,7 +174,8 @@ No entanto, ela irá perder a capacidade de filtrar os pedidos por data de agend
 | code                     | number, string      | Identificador único para a previsão de entrega                               | sim         |
 | order                    | number, string      | Identificador único o pedido de venda                                        | sim         |
 | harvest                  | string              | Label da colheira (e.g., safra/2019, soja/2019, milho/2019)                  | sim         |
-| status                   | number              | Status do pedido (e.g., liberado, processando, ativo, cancelado)             | sim         |
+| status                   | string              | Status do pedido (e.g., liberado, processando, ativo, cancelado)             | sim         |
+| schedule_status          | string              | Status da previsão de entrega do pedido                                      | sim         |
 | cost                     | number              | Custo total do pedido                                                        | não         |
 | unit_cost                | number              | Custo unitário de cada produto do pedido                                     | não         |
 | currency                 | string              | Moeda (e.g., real ou dolar)                                                  | não         |
