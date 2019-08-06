@@ -167,7 +167,7 @@ Tabela contendo todos os pedidos, seus respectivos produtos e a quantidade selec
 Tabela contendo a quantidade que deve ser entrege de cada produto do pedido e que deve ser entrega em uma determinada data.
 
 Caso a empresa não trabalhe com esse tipo de agendamento podemos considerar apenas a tabela de pedidos e a quantidade do produto do pedido.
-Desta forma, ela irá perder a capacidade de filtrar os pedidos por data de agendamento.
+No entanto, ela irá perder a capacidade de filtrar os pedidos por data de agendamento.
 
 | campo                    | tipo                | descrição                                                                    | Obrigatório |
 |--------------------------|---------------------|------------------------------------------------------------------------------|-------------|
