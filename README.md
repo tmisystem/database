@@ -91,8 +91,18 @@
 | last_update           | timestamp, datetime | Data e hora da última atualização na tablea          | sim         |
 
 ## Pedidos
+Essa tabela contém todos os pedidos, seus respectivos produtos e a quantidade de cada um.
+
+
+## Pedidos com previsão de entrega de cada produto
+
+Essa tabela contém a quantidade que deve ser entrege de cada produto do pedido em uma determinada data.
+
+Se a empresa não trabalha com esse tipo de agendamento podemos considerar apenas a tabela de pedidos.
+
 | campo                    | tipo                | descrição                                                                    | Obrigatório |
 |--------------------------|---------------------|------------------------------------------------------------------------------|-------------|
+| code                     | number, string      | Identificador único para a previsão de entrega                               | sim         |
 | order                    | number, string      | Identificador único o pedido de venda                                        | sim         |
 | harvest                  | string              | Label da colheira (e.g., safra/2019, soja/2019, milho/2019)                  | sim         |
 | status                   | number              | Status do pedido (e.g., liberado, processando, ativo, cancelado)             | sim         |
