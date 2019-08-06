@@ -90,5 +90,41 @@
 | conversion_factor     | number              | Fator de conversão                                   | não         |
 | last_update           | timestamp, datetime | Data e hora da última atualização na tablea          | sim         |
 
+## Pedidos
+| campo                    | tipo                | descrição                                                                    | Obrigatório |
+|--------------------------|---------------------|------------------------------------------------------------------------------|-------------|
+| order                    | number, string      | Identificador único o pedido de venda                                        | sim         |
+| harvest                  | string              | Label da colheira (e.g., safra/2019, soja/2019, milho/2019)                  | sim         |
+| status                   | number              | Status do pedido (e.g., liberado, processando, ativo, cancelado)             | sim         |
+| cost                     | number              | Custo total do pedido                                                        | não         |
+| unit_cost                | number              | Custo unitário de cada produto do pedido                                     | não         |
+| currency                 | string              | Moeda (e.g., real ou dolar)                                                  | não         |
+| branch_code              | number, string      | Indentificador único da filial                                               | não         |
+| branch_name              | string              | Nome da filial                                                               | não         |
+| seller_code              | number, string      | Identificador único do vendedor do pedido                                    | sim         |
+| seller_name              | string              | Nome do vendedor do pedido                                                   | sim         |
+| regional_code            | string              | Identificador único da regional do pedido                                    | sim         |
+| regional_name            | number, string      | Nome da regional do pedido                                                   | sim         |
+| client_code              | number, string      | Identificador único do cliente                                               | sim         |
+| client_name              | string              | Nome do cliente                                                              | não         |
+| product_code             | number, string      | Identificador único do produto                                               | sim         |
+| product_amount           | number              | Quantidade do produto no pedido                                              | sim         |
+| product_amount_converted | timestamp, datetime | Quantidade do produto convertida em KG para limitar a capacidade do caminhão | sim         |
+| product_unit             | string              | Unidade do produto (e.g., saco, kg)                                          | não         |
+| product_unit_amount      | number              | Quantidade unitária descrita no rótulo do produto                            | não         |
+| product_density          | string              | Densidade do produto                                                         | não         |
+| product_delivery_date    | timestamp, datetime | Data de previsão de entrega da quantidade agendada do produto                | sim         |
+| product_selected         | number              | Quantidade selecionda do produto no pedido para entrega                      | sim         |
+| freight_type             | string              | Tipo de frete (e.g, fob, cif)                                                | sim         |
+| conversion_unit          | string              | Unidade de conversão (e.g., quilo, grama)                                    | não         |
+| conversion_factor        | number              | Fator de conversão                                                           | não         |
+| address_city_code        | number              | Código IBGE da cidade                                                        | sim         |
+| address_city             | string              | Nome da cidade                                                               | sim         |
+| address_state            | string              | Estado UF (i.e., GO, RJ, SP, etc)                                            | sim         |
+| group_product_code       | number              | Código do grupo                                                              | não         |
+| subgroup_product_code    | number              | Código do subgrupo                                                           | não         |
+| subgroup_product_name    | string              | Nome do subgrupo (e.g., granulados, micronutrientes)                         | não         |
+| group_product_detail     | sring               | Detalhe do gruo (e.g., micronutrientes)                                      | não         |
+| last_update              | timestamp, datetime | Data e hora da última atualização na tablea                                  | sim         |
 
 
